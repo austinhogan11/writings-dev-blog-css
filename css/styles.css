@@ -1,10 +1,11 @@
 * {
-    background-color: #232830;
+    
 }
 
 html {
     margin: 0 8rem;
     color: white;
+    background-color: #232830;
 }
 
 .nav-bar {
@@ -59,11 +60,72 @@ li {
 .cat-links li {
     list-style: none;
     margin: 0 0.5rem;
+    /* font-size: 24px; */
 }
 
 .cat-links li a{
     list-style: none;
     color: gray;
+}
+
+#content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+#article-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 2rem;
+    padding: 1rem 1rem;
+}
+
+.article-card {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid gray;
+    border-radius: 12px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    flex-basis: 20%;
+}
+
+.ac-footer {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1rem;
+    background-color: white;
+}
+
+.ac-footer p {
+    margin-right: 1rem;
+}
+
+.article-card, .article-card h2, .article-card p {
+    background-color: white;
+    color: #232830;
+}
+
+.ac-title {
+    font-weight: 700;
+}
+
+.page-nav {
+    color: white;
+    font-size: 20px;
+    background-color: #232830;
+    border: none;
+    box-shadow: none;
+    
 }
 
 #footer {
